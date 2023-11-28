@@ -11,8 +11,8 @@ with st.sidebar:
     <style>
     .sidebar .sidebar-content {
     color: white;
-}
-</style>
+    }
+    </style>
     if 'REPLICATE_API_TOKEN' in st.secrets:
         st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
