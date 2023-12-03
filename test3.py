@@ -4,6 +4,17 @@ import os
 
 # App title
 st.set_page_config(page_title="🦙💬 Llama 2 Chatbot")
+st.markdown(
+    """
+<style>
+.sidebar .sidebar-content {
+    background-image: linear-gradient(#2e7bcf,#2e7bcf);
+    color: blue;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
 
 # Replicate Credentials
 with st.sidebar:
@@ -75,16 +86,3 @@ if st.session_state.messages[-1]["role"] != "assistant":
             placeholder.markdown(full_response)
     message = {"role": "assistant", "content": full_response}
     st.session_state.messages.append(message)
-
-
-st.markdown(
-    """
-<style>
-.sidebar .sidebar-content {
-    background-image: linear-gradient(#2e7bcf,#2e7bcf);
-    color: blue;
-}
-</style>
-""",
-    unsafe_allow_html=True,
-)
