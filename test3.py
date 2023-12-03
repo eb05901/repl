@@ -32,8 +32,7 @@ with st.sidebar:
     """
 <style>
 .sidebar .sidebar-content {
-    background-image: linear-gradient(#2e7bcf,#2e7bcf);
-    color: blue;
+    background-color: blue;
 }
 </style>
 """,
